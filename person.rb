@@ -1,8 +1,8 @@
 class Person
   #getter
-  # def initialize(name)
-  #   @name = name
-  # end
+  def initialize(name)
+    @name = name
+  end
 
   #getter refact
   # attr_writer :name
@@ -16,16 +16,16 @@ class Person
   #reader refact
   # attr_reader :name
 
-  #reader and getter combined
+  #reader and setter combined
   attr_accessor :name
 
   #setter (allows outside to update variable)
-  def name=(name)
-    @name = name
-  end
+  # def name=(name)
+  #   @name = name
+  # end
 
 end
 
-p = Person.new
-p.name = "New Name"
+p = Person.new ('mitts')
+p.name = 'new'
 puts p.name 
